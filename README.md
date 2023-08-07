@@ -1,3 +1,7 @@
+
+## Live Website
+
+Visit the live website: [Career Path with React](https://carrer-path-react.netlify.app/)
 # Career Path with React
 
 This project is aimed at providing a career path application developed using React. The main features of this application include:
