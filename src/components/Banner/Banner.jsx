@@ -4,8 +4,8 @@ import './Banner.css'
 const Banner = () => {
     return (
         <section className='banner-container'>
-            <div className="top-banner md:flex md:justify-between">
-                <div className='banner-left-side pl-12 ml-10'>
+            <div className="top-banner md:flex md:justify-between md:flex-row">
+                <div className='banner-left-side pl-12 md:ml-20 ml-8'>
                     <h1 className='banner-title text-6xl font-bold'>One Step <br />
                         Closer To Your <br />
                         <span className="dream-job text-6xl font-bold">Dream Job</span>
@@ -18,10 +18,10 @@ const Banner = () => {
 
                 </div>
                 <div className='banner-logo'>
-                 <img src="../../../images/banner-logo.png" alt="" />
-             </div>
+                    <img className='w-8/12 h-8/12' src="../../../images/banner-logo.png" alt="" />
+                </div>
             </div>
-           
+
 
         </section>
     );

@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
+import { MapPinIcon,CurrencyDollarIcon} from '@heroicons/react/24/solid'
 import React from 'react';
 import './FeaturedJob.css';
 import { Link } from 'react-router-dom';
@@ -23,7 +24,7 @@ const FeaturedJob = ({ job }) => {
                 <p className='text-sky-500 border rounded-md px-4 py-1 border-sky-500 mr-4'>{remote_or_onsite}</p>
                 <p className='text-sky-500 border rounded-md px-4 py-1 border-sky-500 mr-4'>{fullTime_or_partTime}</p>
             </div>
-            <p className='ml-10 mt-4 text-gray-600'> <span> {location} </span> <span> {salary}</span></p>
+            <p className='flex flex-row  ml-10 mt-4 text-gray-600'> <span className='flex items-center'><MapPinIcon className="h-4 w-4 mr-1 text-blue-500" /> {location} </span> <span className='flex items-center text-base ml-1 text-gray-400'>Salary: {salary}</span></p>
 
             <Link to={`/job/${job.id}`}>
                 <button  className='ml-10 rounded-lg bg-emerald-300 text-white px-4 py-2 mt-6 mb-4 hover:bg-emerald-400'>

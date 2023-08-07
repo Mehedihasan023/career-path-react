@@ -10,7 +10,7 @@ const AppliedJob = ({ jobs }) => {
 
     return (
         <section className='max-width'>
-            <div className='flex flex-row ml-10 mt-20 justify-center items-center'>
+            <div className='md:flex md:flex-row ml-10 mt-20 justify-center items-center'>
                 <img className='w-52 h-52' src={company_logo} alt="" />
                 <div className='md:grow ml-4'>
                     <h2 className='mb-2'>{job_title}</h2>

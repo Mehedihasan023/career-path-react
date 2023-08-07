@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ActiveLink from '../ActiveLink/ActiveLink';
 import './Header.css'
 const Header = () => {
     return (
@@ -9,9 +10,9 @@ const Header = () => {
                 <h2 className='career-path'> CareerPath</h2>
             </div>
             <div>
-                <Link className='link-style' to='/'>Home</Link>
-                <Link className='link-style' to='/statistics'>Statistics</Link>
-                <Link className='link-style' to='/applied'>Applied Jobs</Link>
+                <ActiveLink className='link-style' to='/'>Home</ActiveLink>
+                <ActiveLink className='link-style' to='/statistics'>Statistics</ActiveLink>
+                <ActiveLink className='link-style' to='/applied'>Applied Jobs</ActiveLink>
             </div>
             <div>
                 <button className='btn-applying'><span className='btn-applying-text'>Start Applying</span></button>

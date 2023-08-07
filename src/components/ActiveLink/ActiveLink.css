@@ -1,0 +1,18 @@
+.active{
+    background-color: gray;
+    margin-right: 5px;
+    padding: 8px;
+    border-radius: 20px;
+    color:aqua;
+
+}
+.in-active{
+    text-decoration: none;
+    margin-right: 31px;
+    font-size: 16px;
+    font-weight: 600;
+    background: var(--linear, linear-gradient(90deg, #7e90fe 0%, #9873ff 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
