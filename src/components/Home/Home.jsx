@@ -3,6 +3,7 @@ import React from 'react';
 import Banner from '../Banner/Banner';
 import JobCategories from '../JobCategories/JobCategories';
 import FeaturedJobs from '../FeaturedJobs/FeaturedJobs';
+import JobDetails from '../JobDetails/JobDetails';
 
 const Home = () => {
     return (
