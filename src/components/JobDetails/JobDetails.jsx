@@ -5,8 +5,10 @@ import React, { useEffect, useState } from 'react';
 import './JobDetails.css'
 import { useParams } from 'react-router-dom';
 import { addToDb } from '../../utilities/fakedb';
+import {toast} from 'react-hot-toast';
 
 const JobDetails = () => {
+
     const [viewDetails, setViewDetails] = useState({});
     const detailId = useParams();
     useEffect(() => {
@@ -26,6 +28,8 @@ const JobDetails = () => {
 
     const handleApplyJobs = (id) => {
         addToDb(id);
+     
+        toast.success('Applied Successfully!!!');
     }
 
     return (
@@ -63,7 +67,7 @@ const JobDetails = () => {
                         <MapPinIcon className="h-6 w-6 mr-1 text-blue-500"/>Address: </span> {viewDetails?.location}</p>
                     </div>
 
-                    <button onClick={() => handleApplyJobs(viewDetails.id)} className='text-center rounded-lg bg-emerald-300 text-white px-4 py-2 mt-6 mb-4 hover:bg-emerald-400 w-full'>
+                    <button  onClick={() =>handleApplyJobs(viewDetails.id)} className='text-center rounded-lg bg-emerald-300 text-white px-4 py-2 mt-6 mb-4 hover:bg-emerald-400 w-full'>
                         Apply Now
                     </button>
                 </div>

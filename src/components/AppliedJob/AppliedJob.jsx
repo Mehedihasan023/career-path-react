@@ -2,9 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 const AppliedJob = ({ jobs }) => {
-    console.log(jobs)
     const { company_logo, job_title, company_name, location, fullTime_or_partTime, remote_or_onsite, salary, id } = jobs;
 
 
