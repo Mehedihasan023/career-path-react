@@ -12,6 +12,8 @@ import Home from './components/Home/Home.jsx';
 import JobDetails from './components/JobDetails/JobDetails.jsx';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs.jsx';
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
+import FeaturedJobs from './components/FeaturedJobs/FeaturedJobs.jsx';
+import Statistics from './components/Statistics/Statistics.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,12 +25,20 @@ const router = createBrowserRouter([
         element:<Home></Home>
     },
     {
+      path:'/featuredJobs',
+      element:<FeaturedJobs></FeaturedJobs>
+    },
+    {
       path:'/job/:id',
       element:<JobDetails></JobDetails>
     },
     {
       path:'/applied',
       element:<AppliedJobs></AppliedJobs>
+    },
+    {
+         path:'/statistics',
+         element:<Statistics></Statistics>
     },
     {
       path:'*',

@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import './Banner.css'
+import { Link } from 'react-router-dom';
 const Banner = () => {
     return (
         <section className='banner-container'>
@@ -13,8 +14,10 @@ const Banner = () => {
                     <p className='banner-text text-sm'>Explore thousands of job opportunities with all the <br />
                         information you need. Its your future. Come find it. Manage all <br />
                         your job application from start to finish.</p>
+                    <Link to='/featuredJobs'>
+                        <button className='btn-get-started'><span className='btn-get-started-text'>Get Started</span></button>
+                    </Link>
 
-                    <button className='btn-get-started'><span className='btn-get-started-text'>Get Started</span></button>
 
                 </div>
                 <div className='banner-logo'>

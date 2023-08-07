@@ -15,7 +15,10 @@ const Header = () => {
                 <ActiveLink className='link-style' to='/applied'>Applied Jobs</ActiveLink>
             </div>
             <div>
+                <Link to='/featuredJobs'>
                 <button className='btn-applying'><span className='btn-applying-text'>Start Applying</span></button>
+                </Link>
+               
             </div>
 
         </section>

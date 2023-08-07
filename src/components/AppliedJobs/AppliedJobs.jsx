@@ -24,22 +24,37 @@ const AppliedJobs = () => {
                         console.log('data not found')
                     }
                 }
-               setAppliedJobs(jobList);
+                setAppliedJobs(jobList);
             })
     }, [])
 
     return (
         <section className=''>
-             <div className='flex justify-center items-center h-72 job-details'>
+            <div className='flex justify-center items-center h-72 job-details'>
                 <h1 className='text-5xl font-semibold '>Applied Jobs </h1>
             </div>
-            
-            {
-               appliedJobs.map(jobs=> <AppliedJob
-               key={jobs.id}
-               jobs={jobs}
-               ></AppliedJob>)
-            }
+
+
+            <div>
+                {
+                    appliedJobs.length === 0 ? (
+                        <h1 className='mt-20 text-3xl font-semibold flex justify-center items-center'>No Applied Jobs. Please Apply for your prefered jobs</h1>
+                    ) : (
+
+                        <div>
+                            {
+                                appliedJobs.map(jobs => <AppliedJob
+                                    key={jobs.id}
+                                    jobs={jobs}
+                                ></AppliedJob>)
+                            }
+
+
+                        </div>
+
+                    )
+                }
+            </div>
 
 
         </section>
