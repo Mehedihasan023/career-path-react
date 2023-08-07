@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Header.css'
 const Header = () => {
     return (
-        <section className='header-container'>
+        <section className='header-container md:flex md:justify-around md:items-center'>
             <div>
                 <h2 className='career-path'> CareerPath</h2>
             </div>

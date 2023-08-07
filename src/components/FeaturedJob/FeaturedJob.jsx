@@ -15,7 +15,7 @@ const FeaturedJob = ({ job }) => {
         salary,
     } = job;
     return (
-        <div className='w-11/12 ml-10 mr-10  mb-6 h-auto border border-gray-400 rounded-lg'>
+        <section className='w-11/12 ml-10 mr-10  mb-6 pb-6 h-auto border border-gray-400 rounded-lg'>
             <img className='w-auto mb-8 h-14 m-10' src={company_logo} alt="" />
             <h2 className='text-xl font-semibold ml-10 mb-2'>{job_title}</h2>
             <h4 className='text-base font-medium text-gray-500 ml-10'>{company_name}</h4>
@@ -33,7 +33,7 @@ const FeaturedJob = ({ job }) => {
             </Link>
 
 
-        </div>
+        </section>
     );
 };
 

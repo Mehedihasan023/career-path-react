@@ -9,7 +9,7 @@ const AppliedJob = ({ jobs }) => {
 
 
     return (
-        <div>
+        <section className='max-width'>
             <div className='flex flex-row ml-10 mt-20 justify-center items-center'>
                 <img className='w-52 h-52' src={company_logo} alt="" />
                 <div className='md:grow ml-4'>
@@ -29,7 +29,7 @@ const AppliedJob = ({ jobs }) => {
 
 
             </div>
-        </div>
+        </section>
     );
 };
 

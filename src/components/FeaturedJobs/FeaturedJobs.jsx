@@ -28,7 +28,7 @@ const FeaturedJobs = () => {
  
 
   return (
-      <div>
+      <section className='max-width'>
         <h1 className='mt-32 text-center text-5xl font-semibold mb-4'>Featured Jobs</h1>
         <p className='text-center text-base text-gray-400 mb-7'>Explore thousands of job opportunities with all the information you need.Its your future</p>
         <div className='grid md:grid-cols-2'>
@@ -52,7 +52,7 @@ const FeaturedJobs = () => {
             </button>
           </div>
         )}
-      </div>
+      </section>
   );
 };
 

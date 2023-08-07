@@ -28,12 +28,12 @@ const JobDetails = () => {
     }
 
     return (
-        <div>
+        <section className=''>
             <div className='flex justify-center items-center h-72 job-details'>
                 <h1 className='text-5xl font-semibold '>Job Details </h1>
             </div>
 
-            <div className='grid md:grid-cols-3'>
+            <div className='grid md:grid-cols-3 max-width'>
                 <div className='job-info mt-32 md:col-span-2'>
                     <p className='mb-6'><span className='text-xl font-semibold'>Job Description: </span>{viewDetails?.job_description} </p>
                     <p className='mb-6'><span className='text-xl font-semibold'>Job Responsibility: </span>{viewDetails?.job_responsibility} </p>
@@ -62,7 +62,7 @@ const JobDetails = () => {
                     </button>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

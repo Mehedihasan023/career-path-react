@@ -29,7 +29,7 @@ const AppliedJobs = () => {
     }, [])
 
     return (
-        <div>
+        <section className=''>
              <div className='flex justify-center items-center h-72 job-details'>
                 <h1 className='text-5xl font-semibold '>Applied Jobs </h1>
             </div>
@@ -42,7 +42,7 @@ const AppliedJobs = () => {
             }
 
 
-        </div>
+        </section>
     );
 };
 
