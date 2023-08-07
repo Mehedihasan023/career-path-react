@@ -5,7 +5,7 @@ import './FeaturedJob.css';
 const FeaturedJob = ({job}) => {
     
     return (
-        <div className='w-11/12 ml-7  mb-6 h-auto border border-gray-400 rounded-lg'>
+        <div className='w-11/12 ml-10 mr-10  mb-6 h-auto border border-gray-400 rounded-lg'>
             <img className='w-auto mb-8 h-14 m-10' src={job.image} alt="" />
              <h2 className='text-xl font-semibold ml-10 mb-2'>{job.jobTitle}</h2>
             <h4 className='text-base font-medium text-gray-500 ml-10'>{job.companyName}</h4>
