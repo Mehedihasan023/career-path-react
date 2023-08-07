@@ -2,8 +2,6 @@
 import React, { useEffect, useState } from 'react';
 import './FeaturedJobs.css';
 import FeaturedJob from '../FeaturedJob/FeaturedJob';
-import JobDetails from '../JobDetails/JobDetails';
-
 const FeaturedJobs = () => {
   const [jobs, setJobs] = useState([]);
   const [showAllJobs, setShowAllJobs] = useState(false);

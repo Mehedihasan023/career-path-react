@@ -10,6 +10,7 @@ import './index.css'
 import Main from './components/Layout/Main.jsx';
 import Home from './components/Home/Home.jsx';
 import JobDetails from './components/JobDetails/JobDetails.jsx';
+import AppliedJobs from './components/AppliedJobs/AppliedJobs.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
     {
       path:'/job/:id',
       element:<JobDetails></JobDetails>
+    },
+    {
+      path:'/applied',
+      element:<AppliedJobs></AppliedJobs>
     }
   ]
   },
