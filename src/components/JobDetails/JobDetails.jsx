@@ -40,7 +40,7 @@ const JobDetails = () => {
 
             <div className='grid md:grid-cols-3 max-width'>
                 <div className='job-info mt-32 md:col-span-2'>
-                    <p className='mb-6'><span className='text-xl font-semibold'>Job Description: </span>{viewDetails.job_description} </p>
+                    <p className='mb-6'><span className='text-xl font-semibold'>Job Description: </span>{viewDetails?.job_description} </p>
                     <p className='mb-6'><span className='text-xl font-semibold'>Job Responsibility: </span>{viewDetails?.job_responsibility} </p>
 
                     <p className='mb-4'><span className='text-xl font-semibold'>Educational Requirments: </span></p>
@@ -54,7 +54,7 @@ const JobDetails = () => {
                         <h2 className='font-semibold text-2xl py-4'>Job Details</h2>
                         <hr className='hr-underline'></hr>
                         <p className='mt-3 text-gray-600 flex flex-row items-center text-xl'><span className='font-semibold text-xl text-cyan-700 flex flex-row items-center mr-1'>
-                        <CurrencyDollarIcon className="h-6 w-6 mr-1 text-blue-500"/>Salary: </span> {viewDetails.salary}</p>
+                        <CurrencyDollarIcon className="h-6 w-6 mr-1 text-blue-500"/>Salary: </span> {viewDetails?.salary}</p>
                         <p className='mt-3 text-gray-600 flex flex-row items-center text-xl'><span className='font-semibold text-xl text-cyan-700 flex flex-row items-center mr-1'>
                         <CalendarDaysIcon className="h-6 w-6 mr-1 text-blue-500"/>Job Title: </span> {viewDetails?.job_title}</p>
                         <h2 className='font-semibold text-2xl py-2'>Contact Inforamtion</h2>
