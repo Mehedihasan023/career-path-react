@@ -21,7 +21,7 @@ const Banner = () => {
 
                 </div>
                 <div className='banner-logo'>
-                    <img className='w-8/12 h-8/12' src="../../../images/banner-logo.png" alt="" />
+                    <img className='w-8/12 h-8/12' src="/images/banner-logo.png" alt="" />
                 </div>
             </div>
 
